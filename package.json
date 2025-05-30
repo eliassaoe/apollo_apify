@@ -1,0 +1,14 @@
+{
+    "name": "apollo-backend-scraper",
+    "version": "1.0.0",
+    "description": "Scrape Apollo leads via backend API",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "apify": "^3.0.0"
+    },
+    "author": "Eliasse",
+    "license": "MIT"
+}
