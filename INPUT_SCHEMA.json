@@ -1,0 +1,25 @@
+{
+    "title": "Apollo Backend Scraper Input",
+    "description": "Configuration for scraping Apollo leads via backend API",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "apolloUrl": {
+            "title": "Apollo Search URL",
+            "type": "string",
+            "description": "The Apollo.io search URL to scrape leads from",
+            "example": "https://app.apollo.io/#/people?finderViewId=5b6dfc6e73f47668b8000000&q_organization_domains=example.com",
+            "editor": "textfield",
+            "prefill": "https://app.apollo.io/#/people"
+        },
+        "backendUrl": {
+            "title": "Backend Webhook URL",
+            "type": "string",
+            "description": "Your backend webhook URL (optional - defaults to your endpoint)",
+            "example": "https://eliasse-n8n.onrender.com/webhook/apify",
+            "editor": "textfield",
+            "default": "https://eliasse-n8n.onrender.com/webhook/apify"
+        }
+    },
+    "required": ["apolloUrl"]
+}
